@@ -28,7 +28,7 @@ const dr = dumber({
   baseUrl: '/' + dist,
 
   // can turn off cache for production build
-  // cache: !isProduction,
+  cache: !isProduction,
 
   // entry bundle name, dumber default is "entry-bundle"
   entryBundle: 'entry.bundle',
@@ -117,8 +117,12 @@ function buildCss(src) {
       // sassPackageImporter handles @import "~bootstrap"
       // https://github.com/maoberlehner/node-sass-magic-importer/tree/master/packages/node-sass-package-importer
       isProduction || isTest ?
-        sass.sync({ importer: sassPackageImporter() }) :
-        sass.sync({ importer: sassPackageImporter() }).on('error', sass.logError)
+        sass.sync({ importer: sassPackageImporter({
+            
+        }) }) :
+        sass.sync({ importer: sassPackageImporter({
+            
+        }) }).on('error', sass.logError)
     ))
     .pipe(postcss([
       autoprefixer(),

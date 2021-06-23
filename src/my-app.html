@@ -1,1 +1,27 @@
-<div class="message">${message}</div>
+<require from="grapesjs/dist/css/grapes.min.css"></require>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<!-- doing this so we override the defaults. Aurelia is putting the style at the top-->
+<require from="./my-app.css"></require>
+
+<div class="panel__top" ref="panelTop">
+    <div class="panel__basic-actions" ref="panelBasicActions"></div>
+    <div class="panel__devices" ref="panelDevices"></div>
+    <div class="panel__switcher" ref="panelSwitcher"></div>
+</div>
+
+<div class="editor-row">
+    <div class="editor-canvas">
+        <div id="gjs" ref="gjs">
+            <h1>Hello world components</h1>
+        </div>
+    </div>
+    <div class="panel__right" ref="panelRight">
+        <div class="layers-container" ref="layersContainer"></div>
+        <div class="styles-container" ref="stylesContainer"></div>
+        <div class="traits-container" ref="traitsContainer"></div>
+    </div>
+</div>
+
+<div id="blocks" ref="blocks">
+
+</div>
