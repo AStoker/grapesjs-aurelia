@@ -1,4 +1,5 @@
 import grapesjs from 'grapesjs';
+import gjsForms from 'grapesjs-plugin-forms';
 
 export class MyApp {
 
@@ -8,6 +9,12 @@ export class MyApp {
             fromElement: true,
             height: '300px',
             width: 'auto',
+            plugins: [
+                gjsForms
+            ],
+            pluginsOpts: {
+                [gjsForms]: {}
+            },
             StorageManager: false,
             panels: {
                 defaults: [

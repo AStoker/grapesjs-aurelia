@@ -9,7 +9,8 @@
   "license": "UNLICENSED",
   "dependencies": {
     "aurelia": "latest",
-    "grapesjs": "^0.17.4"
+    "grapesjs": "^0.17.4",
+    "grapesjs-plugin-forms": "^2.0.1"
   },
   "devDependencies": {
     "@aurelia/plugin-gulp": "latest",

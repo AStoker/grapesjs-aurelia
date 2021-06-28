@@ -1,3 +1,5 @@
+const path = require('path');
+
 const gulp = require('gulp');
 const dumber = require('gulp-dumber');
 const au2 = require('@aurelia/plugin-gulp').default;
@@ -117,12 +119,27 @@ function buildCss(src) {
       // sassPackageImporter handles @import "~bootstrap"
       // https://github.com/maoberlehner/node-sass-magic-importer/tree/master/packages/node-sass-package-importer
       isProduction || isTest ?
-        sass.sync({ importer: sassPackageImporter({
+        sass.sync(
+            { 
+                importer: sassPackageImporter(
+                    {
             
-        }) }) :
-        sass.sync({ importer: sassPackageImporter({
+                    }
+                )
+            }
+        ) :
+        sass.sync(
+            { 
+                includePaths: [
+                    path.resolve('./node_modules')
+                ],
+                importer: sassPackageImporter(
+                    {
             
-        }) }).on('error', sass.logError)
+                    }
+                )
+            }
+        ).on('error', sass.logError)
     ))
     .pipe(postcss([
       autoprefixer(),

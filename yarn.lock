@@ -3576,6 +3576,11 @@ graceful-fs@^4.0.0, graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6,
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
   integrity sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==
 
+grapesjs-plugin-forms@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/grapesjs-plugin-forms/-/grapesjs-plugin-forms-2.0.1.tgz#8ecb3b30c074f5aac9cef7d0218987f315888bd2"
+  integrity sha512-TNzy6bSBPocPvYjZr4Jtc3eRKZsbRpin8w0vGlfhgoaCd7q2uMUYyq2ziAKYCjQalByz3Kia9SMWmwh9NsLRpA==
+
 grapesjs@^0.17.4:
   version "0.17.4"
   resolved "https://registry.yarnpkg.com/grapesjs/-/grapesjs-0.17.4.tgz#4baf69598b74a2e58c5133d9ab85631cf4de53e1"
