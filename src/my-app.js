@@ -6,6 +6,7 @@ export class MyApp {
     attached() {
         const editor = grapesjs.init({
             container: this.gjs, //'#gjs',
+            cssIcons: false,
             fromElement: true,
             height: '300px',
             width: 'auto',
